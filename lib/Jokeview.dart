@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:texcheck/Jokes.dart';
+import 'package:texcheck/Tvshow.dart';
 import 'jokebloc.dart';
 
 class Jokeview extends StatefulWidget {
@@ -69,18 +70,22 @@ class _JokeviewState extends State<Jokeview> {
                           padding: const EdgeInsets.all(8.0),
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
-
-
-                                child: SingleChildScrollView(
-                                  child: Text(
-                                    data.joke,
-                                    style: TextStyle(
-                                        fontSize: 20.0,
-                                        color: Colors.greenAccent),
-                                  ),
+                            child: SingleChildScrollView(
+                              child: InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      (MaterialPageRoute(
+                                          builder: (context) => Tvshow())));
+                                },
+                                child: Text(
+                                  data.joke,
+                                  style: TextStyle(
+                                      fontSize: 20.0,
+                                      color: Colors.greenAccent),
                                 ),
-
-
+                              ),
+                            ),
                           ))),
                 ));
       },
