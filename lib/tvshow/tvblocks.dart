@@ -1,7 +1,6 @@
 import 'package:rxdart/rxdart.dart';
-import 'package:texcheck/Allshows.dart';
-import 'package:texcheck/Jokes.dart';
-import 'package:texcheck/tvrepo.dart';
+import 'file:///C:/Users/SAP1/AndroidStudioProjects/texcheck/lib/tvshow/Allshows.dart';
+import 'package:texcheck/tvshow/tvrepo.dart';
 
 class tvblocks {
   var repo = tvrepo();

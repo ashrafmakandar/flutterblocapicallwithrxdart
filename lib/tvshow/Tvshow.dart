@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:meet_network_image/meet_network_image.dart';
 import 'package:progress_indicators/progress_indicators.dart';
-import 'package:texcheck/Allshows.dart';
-import 'package:texcheck/tvblocks.dart';
+import 'file:///C:/Users/SAP1/AndroidStudioProjects/texcheck/lib/tvshow/Allshows.dart';
+import 'file:///C:/Users/SAP1/AndroidStudioProjects/texcheck/lib/tvshow/tvblocks.dart';
 import 'package:progressive_image/progressive_image.dart';
 
 class Tvshow extends StatefulWidget {

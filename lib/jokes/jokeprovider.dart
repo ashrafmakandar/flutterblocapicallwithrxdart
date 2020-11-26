@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:texcheck/Jokes.dart';
+import 'package:texcheck/jokes/Jokes.dart';
 
 class jokeprovider {
   var url = "http://api.icndb.com/jokes/random/200";

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:texcheck/Jokeview.dart';
+import 'file:///C:/Users/SAP1/AndroidStudioProjects/texcheck/lib/jokes/Jokeview.dart';
 import 'package:texcheck/Reqres.dart';
 import 'Checkbloc.dart';
 

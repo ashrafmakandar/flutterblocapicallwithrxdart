@@ -1,6 +1,6 @@
 import 'package:rxdart/rxdart.dart';
-import 'package:texcheck/Jokes.dart';
-import 'package:texcheck/Jokrepo.dart';
+import 'file:///C:/Users/SAP1/AndroidStudioProjects/texcheck/lib/jokes/Jokrepo.dart';
+import 'package:texcheck/jokes/Jokes.dart';
 
 class jokebloc {
   var repo = Jokerepo();

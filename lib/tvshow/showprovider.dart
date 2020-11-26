@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:texcheck/Allshows.dart';
+import 'file:///C:/Users/SAP1/AndroidStudioProjects/texcheck/lib/tvshow/Allshows.dart';
 
 class showprovider {
   var url = "http://api.tvmaze.com/shows";

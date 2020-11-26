@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:texcheck/Jokes.dart';
-import 'package:texcheck/Tvshow.dart';
-import 'jokebloc.dart';
+
+import 'package:texcheck/jokes/Jokes.dart';
+import 'package:texcheck/jokes/jokebloc.dart';
+import 'file:///C:/Users/SAP1/AndroidStudioProjects/texcheck/lib/tvshow/Tvshow.dart';
+
 
 class Jokeview extends StatefulWidget {
   @override
