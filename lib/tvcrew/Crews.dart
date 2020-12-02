@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:meet_network_image/meet_network_image.dart';
 import 'package:texcheck/tvcrew/Crew.dart';
@@ -32,16 +31,22 @@ class _CrewsState extends State<Crews> {
                       return Card(
                         child: Column(
                           children: [
-                            Text(this.widget.index.toString()),
-                            MeetNetworkImage(
-                              imageUrl:
-                                  snapshot.data[index].person.image.original,
-                              fit: BoxFit.cover,
-                              loadingBuilder: (context) => Center(
-                                child: CircularProgressIndicator(),
-                              ),
-                              errorBuilder: (context, e) => Center(
-                                child: Text('Error appear!'),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(snapshot.data[index].person.name),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: MeetNetworkImage(
+                                imageUrl:
+                                    snapshot.data[index].person.image.original,
+                                fit: BoxFit.cover,
+                                loadingBuilder: (context) => Center(
+                                  child: CircularProgressIndicator(),
+                                ),
+                                errorBuilder: (context, e) => Center(
+                                  child: Text('Error appear!'),
+                                ),
                               ),
                             ),
                           ],
