@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:texcheck/Newest.dart';
 import 'package:texcheck/Newpage.dart';
@@ -34,6 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
   final edit = TextEditingController();
   bool _ispress = false;
+  bool _isvisble = true;
+  int count = 0;
   List<String> aa = [
     'please select a value',
     'one',
@@ -117,11 +120,42 @@ class _MyHomePageState extends State<MyHomePage> {
                   dropdoenvalue = newval;
                   edit.text = dropdoenvalue;
                 });
-                    Navigator.push(context,
-                      (MaterialPageRoute(builder: (context) => Newest())));
+                Navigator.push(context,
+                    (MaterialPageRoute(builder: (context) => Newest())));
               },
             ),
-
+            _isvisble
+                ? Visibility(
+                    visible: _isvisble,
+                    child: _isvisble
+                        ? Text(
+                            "visible",
+                            style: TextStyle(fontSize: 25, color: Colors.black),
+                          )
+                        : Text(
+                            "invisible",
+                            style: TextStyle(fontSize: 25, color: Colors.black),
+                          ))
+                : CircularProgressIndicator(),
+            FlatButton(
+                color: Colors.black,
+                textColor: Colors.redAccent,
+                splashColor: Colors.white,
+                onPressed: () {
+                  count++;
+                  setState(() {
+                    if (count % 2 == 0) {
+                      print(count);
+                      _isvisble = false;
+                    } else {
+                      print(count);
+                      _isvisble = true;
+                    }
+                  });
+                },
+                child: Text("click"))
+            
+            ,
 
           ],
         ),

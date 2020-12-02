@@ -13,12 +13,13 @@ class _NewestState extends State<Newest> {
   @override
   Widget build(BuildContext context) {
     bloc.fetchAllMovies();
+    print("widget loaded");
     return Scaffold(
       body: StreamBuilder<List<Posts>>(
           stream: bloc.allMovies,
           builder: (context, snapshot) {
             if (snapshot.hasData) {
-              print(snapshot.data);
+
               return ListView.builder(
                   itemCount: snapshot.data.length,
                   itemBuilder: (context, index) {
